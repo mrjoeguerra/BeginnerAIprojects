@@ -92,18 +92,15 @@ X_train, X_test, y_train, y_test = train_test_split(
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Select only numeric columns for correlation
+numeric_df = df.select_dtypes(include=['number'])
+
 # Plot a correlation heatmap for all numeric features
 plt.figure(figsize=(12,8))
-sns.heatmap(df.corr(), annot=False, cmap='coolwarm')
+sns.heatmap(numeric_df.corr(), annot=False, cmap='coolwarm')
 plt.title('Feature Correlation Matrix')
 plt.show()
 
-# Plot the distribution of the target variable (PTS)
-plt.figure()
-sns.histplot(y, bins=30, kde=True)
-plt.title('Distribution of Points Per Game')
-plt.xlabel('PTS')
-plt.show()
 ```
 *Visualizations help us understand relationships and data distribution.*
 
