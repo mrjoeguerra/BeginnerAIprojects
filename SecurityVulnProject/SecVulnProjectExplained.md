@@ -125,6 +125,63 @@ By reviewing individual predictions, we can better understand the model's streng
 - **Skills Demonstrated:** Data preprocessing, feature engineering, text classification, model evaluation, and interpretability.
 - **Extensions:** You could try more advanced models (e.g., SVM, Random Forest, or BERT), hyperparameter tuning, or more detailed text preprocessing for further improvement.
 
-This project is a concise, practical showcase of your AI/ML workflow and skills using a real-world security dataset[1].
+This project is a concise, practical showcase of your AI/ML workflow and skills using a real-world security dataset.
 
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/5013513/6120a161-8891-4292-99da-8ee7d0433848/Security-Vulnerabilities.csv
+## Tips for Clean Output
+
+1. **Use clear section dividers** between examples.
+2. **Limit summary length** for very long texts.
+3. **Align labels** for easier visual comparison.
+4. **Number each example** for reference.
+5. **Optionally, use tabulate or pandas DataFrame** for tabular output.
+
+## Improved Code Example
+
+```python
+from textwrap import shorten
+
+# Number of examples to display
+num_examples = 5
+
+print("\n=== Sample Predictions ===\n")
+for i in range(num_examples):
+    summary = shorten(X_test.iloc[i], width=100, placeholder="...")  # Limit summary to 100 chars
+    actual = y_test.iloc[i]
+    predicted = y_pred[i]
+    print(f"Example {i+1}")
+    print(f"{'-'*40}")
+    print(f"Summary         : {summary}")
+    print(f"Actual Severity : {actual}")
+    print(f"Predicted       : {predicted}")
+    print(f"{'='*40}\n")
+```
+
+**What this does:**
+- Uses `textwrap.shorten` to keep summaries concise.
+- Adds clear dividers and labels.
+- Numbers each example for clarity.
+
+## Optional: Display as a Table
+
+If you prefer a tabular format:
+
+```python
+import pandas as pd
+from textwrap import shorten
+
+# Create a DataFrame for a few examples
+examples = []
+for i in range(num_examples):
+    examples.append({
+        "Summary": shorten(X_test.iloc[i], width=60, placeholder="..."),
+        "Actual": y_test.iloc[i],
+        "Predicted": y_pred[i]
+    })
+df_examples = pd.DataFrame(examples)
+print(df_examples.to_string(index=False))
+```
+
+## Summary
+
+By formatting your output with clear dividers, concise summaries, and aligned labels, you make your results much easier to read and interpret—whether for yourself or for an audience. This also demonstrates professionalism and attention to detail in your AI/ML projects!
+
