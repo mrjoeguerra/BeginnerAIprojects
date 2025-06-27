@@ -3,7 +3,7 @@
 What happens when you mix cybersecurity with machine learning? You get a project that not only flexes your technical muscles but also addresses a real-world problem: identifying and prioritizing software vulnerabilities before the bad guys do.
 
 **The Challenge:**  
-Software vulnerabilities are everywhere, but not all are created equal. Some are minor annoyances; others are ticking time bombs. My mission? Build an AI model that reads a vulnerability’s summary and predicts its severity—helping security teams focus on what matters most.
+Software vulnerabilities are everywhere, but not all are created equal. Some are minor annoyances; others are ticking time bombs. My mission? Build an AI model that reads a vulnerability’s summary and predicts its severity, helping security teams focus on what matters most.
 
 **The Journey:**
 
