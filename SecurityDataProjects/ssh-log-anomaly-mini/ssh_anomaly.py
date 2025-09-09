@@ -3,7 +3,7 @@
 SSH Auth Log Anomaly Detection (Mini)
 - Builds synthetic auth logs, engineers features, applies IsolationForest,
   and uses simple rules (burst failures, off-hours) to flag anomalies.
-- Heavily commented for interview-readability.
+- Heavily commented for readability.
 """
 
 import argparse

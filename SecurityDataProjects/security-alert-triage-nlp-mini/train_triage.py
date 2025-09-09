@@ -2,7 +2,7 @@
 """
 Security Alert Triage NLP (Mini)
 - Multi-class classification for alert prioritization (Low/Medium/High)
-- TF-IDF + LinearSVC baseline, with clear comments for interview readability.
+- TF-IDF + LinearSVC baseline, with clear comments for readability.
 """
 
 import argparse

@@ -2,7 +2,7 @@
 """
 Phishing URL Detector (Mini)
 - Teaches feature engineering + TF-IDF + LogisticRegression for security URLs.
-- Written with instructor-style comments so reviewers see your reasoning.
+- Written with instructor-style comments so reviewers see the reasoning.
 """
 
 import argparse
