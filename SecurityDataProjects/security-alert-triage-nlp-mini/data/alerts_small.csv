@@ -1,0 +1,16 @@
+text,priority
+multiple failed logins from single ip address,High
+vulnerability scan detected outdated openssl version,Medium
+user requested password reset,Low
+suspicious powershell execution detected,High
+antivirus quarantined low risk adware,Low
+ssh login success from new country,Medium
+ransomware signature detected on endpoint,High
+dns query volume exceeded baseline,Medium
+endpoint missing critical patch,Medium
+email attachment blocked by policy,Low
+admin account added to domain admins group,High
+web application returned multiple 500 errors,Medium
+usb storage device connected,Low
+multiple 403 responses from same client,Medium
+brute force attempts detected on vpn gateway,High

@@ -1,0 +1,17 @@
+url,label
+http://paypal.com.security-check-login.com/account/verify,1
+https://accounts.google.com/ServiceLogin,0
+http://update-billing-amazon.com/secure-login,1
+https://www.bankofamerica.com/online-banking/,0
+http://appleid.apple.com.signin.reset-password.info,1
+https://github.com/login,0
+http://secure-paypal.com.login.verify-user.co,1
+https://www.microsoft.com/en-us/,0
+http://dropbox.com.login.secure-update.net,1
+https://docs.python.org/3/,0
+http://chase.com.login-authentication.center,1
+https://www.nist.gov/,0
+http://support-steamcommunity.com-id12345.ru,1
+https://www.wgu.edu/,0
+http://facebook.com-security-check-help.info,1
+https://openai.com/,0
