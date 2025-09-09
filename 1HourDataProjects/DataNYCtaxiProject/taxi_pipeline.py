@@ -2,8 +2,6 @@
 """
 NYC Taxi Pipeline: Parquet -> DuckDB -> SQL Analytics -> Tiny ML
 
-This script is **deliberately verbose** with comments and logs to show
-engineering thinking, assumptions, and tradeoffs to reviewers.
 """
 
 import os

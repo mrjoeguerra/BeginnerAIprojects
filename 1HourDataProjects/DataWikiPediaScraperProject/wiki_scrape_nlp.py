@@ -3,7 +3,7 @@
 Wikipedia Scraper -> CSV + TF-IDF Keyword Extraction
 
 This script intentionally includes detailed comments/log messages so a reviewer
-can assess your understanding of scraping, cleaning, and simple NLP.
+can assess the understanding of scraping, cleaning, and simple NLP.
 """
 
 import re
